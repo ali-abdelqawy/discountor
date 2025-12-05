@@ -1,13 +1,6 @@
-<p align="center">
-  <strong>Discountor</strong>
-</p>
+## Discountor
 
-  <p align="center">A discount engine that applies various promotional discounts to a user's shopping cart based on a configurable set of rules.</p>
-    <p align="center">
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+a discount engine that applies various promotional discounts to a user's shopping cart based on a configurable set of rules.
 
 ## Project setup
 
