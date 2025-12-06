@@ -2,6 +2,16 @@
 
 a discount engine that applies various promotional discounts to a user's shopping cart based on a configurable set of rules.
 
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Project setup](#project-setup)
+- [Compile and run the project](#compile-and-run-the-project)
+- [Run tests](#run-tests)
+- [Git](#git)
+- [VS Code Extensions](#vs-code-extensions)
+- [VS Code Settings](#vs-code-settings)
+
 ## Requirements
 
 This project requires:
@@ -119,34 +129,6 @@ gh pr create
 gh pr merge --squash
 ```
 
-## VS Code Settings
-
-The `.vscode/settings.json` file configures consistent editor behavior across all contributors:
-
-| Setting                                        | Value                          | Purpose                                      |
-| ---------------------------------------------- | ------------------------------ | -------------------------------------------- |
-| `editor.formatOnSave`                          | `true`                         | Auto-format files on save                    |
-| `editor.defaultFormatter`                      | `esbenp.prettier-vscode`       | Use Prettier as the default formatter        |
-| `editor.tabSize`                               | `2`                            | 2-space indentation                          |
-| `editor.insertSpaces`                          | `true`                         | Use spaces instead of tabs                   |
-| `editor.detectIndentation`                     | `false`                        | Disable auto-detection, use configured style |
-| `editor.bracketPairColorization.enabled`       | `true`                         | Colorize matching brackets                   |
-| `editor.guides.bracketPairs`                   | `true`                         | Show bracket pair guides                     |
-| `editor.codeActionsOnSave`                     | Prettier + ESLint fixes        | Auto-fix linting issues and organize imports |
-| `[javascript]`, `[typescript]`, etc.           | Prettier formatter             | Per-language formatter overrides             |
-| `typescript.tsdk`                              | `node_modules/typescript/lib`  | Use workspace TypeScript version             |
-| `typescript.enablePromptUseWorkspaceTsdk`      | `true`                         | Prompt to use workspace TypeScript           |
-| `typescript.updateImportsOnFileMove.enabled`   | `always`                       | Auto-update imports when files are moved     |
-| `typescript.preferences.importModuleSpecifier` | `non-relative`                 | Prefer non-relative import paths             |
-| `eslint.validate`                              | `["javascript", "typescript"]` | Enable ESLint for JS and TS files            |
-| `eslint.useFlatConfig`                         | `true`                         | Use ESLint flat config format                |
-| `files.trimTrailingWhitespace`                 | `true`                         | Remove trailing whitespace on save           |
-| `files.insertFinalNewline`                     | `true`                         | Ensure files end with a newline              |
-| `files.trimFinalNewlines`                      | `true`                         | Remove extra newlines at end of file         |
-| `diffEditor.ignoreTrimWhitespace`              | `false`                        | Show whitespace changes in diffs             |
-| `search.exclude`                               | `node_modules`, `dist`, etc.   | Exclude build artifacts from search          |
-| `workbench.editor.enablePreview`               | `false`                        | Always open files in new tabs                |
-
 ## VS Code Extensions
 
 This project includes a `.vscode/extensions.json` file with recommended extensions for an optimal development experience. When you open the project in VS Code, you'll be prompted to install them.
@@ -160,3 +142,7 @@ This project includes a `.vscode/extensions.json` file with recommended extensio
 | `usernamehw.errorlens`                  | Inline display of errors and warnings             |
 | `YoavBls.pretty-ts-errors`              | Improved TypeScript error messages                |
 | `codeandstuff.package-json-upgrade`     | Shows available package updates in `package.json` |
+
+## VS Code Settings
+
+The `.vscode/settings.json` file configures consistent editor behavior across all contributors, including formatting, linting, and TypeScript preferences.
