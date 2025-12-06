@@ -1,6 +1,6 @@
 import { NestFactory } from "@nestjs/core";
-import { AppModule } from "./app.module";
-import { checkEngines } from "./utils/check-engines.util";
+import { AppModule } from "@/app.module";
+import { checkEngines } from "@/utils/check-engines.util";
 
 async function bootstrap() {
   checkEngines();
