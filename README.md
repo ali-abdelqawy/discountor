@@ -2,6 +2,16 @@
 
 a discount engine that applies various promotional discounts to a user's shopping cart based on a configurable set of rules.
 
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Project setup](#project-setup)
+- [Compile and run the project](#compile-and-run-the-project)
+- [Run tests](#run-tests)
+- [Git](#git)
+- [VS Code Settings](#vs-code-settings)
+- [VS Code Extensions](#vs-code-extensions)
+
 ## Requirements
 
 This project requires:
