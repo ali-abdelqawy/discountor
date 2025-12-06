@@ -11,6 +11,9 @@
   },
   "packageManager": "npm@11.2.0",
   "scripts": {
+    "check:node": "node -e \"if(process.versions.node.split('.')[0]<24){console.error('Node >= 24 required');process.exit(1)}\"",
+    "check:npm": "npm -v | node -e \"let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{if(parseInt(d)<11){console.error('npm >= 11 required');process.exit(1)}})\"",
+    "check:engines": "npm run check:node && npm run check:npm",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
