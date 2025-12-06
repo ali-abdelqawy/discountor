@@ -2,14 +2,22 @@
 
 a discount engine that applies various promotional discounts to a user's shopping cart based on a configurable set of rules.
 
-## Requirements (Non-Docker Setup)
+## Requirements
 
-For non-Docker setup, this project requires:
+This project requires:
 
 - **Node.js**: >= 24
 - **npm**: >= 11
 
-The `engines` field enforces these minimum versions, and `packageManager` is set to `npm@11.2.0` to ensure consistent package management across environments.
+Engine validation is enforced at three levels:
+
+| Layer        | File                   | When Checked            | Description                                                 |
+| ------------ | ---------------------- | ----------------------- | ----------------------------------------------------------- |
+| Install-time | `.npmrc`               | `npm install`           | `engine-strict=true` makes npm fail if versions don't match |
+| Manual       | `package.json` scripts | `npm run check:engines` | Runs version checks via npm scripts                         |
+| Runtime      | `src/main.ts`          | App startup             | Validates engines before NestJS bootstraps                  |
+
+The `packageManager` field is set to `npm@11.2.0` to ensure consistent package management across environments.
 
 ## Project setup
 
