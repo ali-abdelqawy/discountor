@@ -83,6 +83,15 @@ All three branches have the following protections enabled:
 - Commits and branches must be **atomic** — each should contain only one logical change.
 - Commit messages should be **meaningful** and clearly describe the change.
 
+### Starting a New Task
+
+```bash
+git checkout develop
+git pull
+npm install
+git checkout -b your-branch-name
+```
+
 ### Tips for Faster PR Workflow
 
 Install the [GitHub CLI](https://cli.github.com/) for faster PR management:
