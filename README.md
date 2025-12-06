@@ -118,3 +118,17 @@ gh pr create
 # Squash merge a pull request
 gh pr merge --squash
 ```
+
+## VS Code Extensions
+
+This project includes a `.vscode/extensions.json` file with recommended extensions for an optimal development experience. When you open the project in VS Code, you'll be prompted to install them.
+
+| Extension                               | Purpose                                           |
+| --------------------------------------- | ------------------------------------------------- |
+| `streetsidesoftware.code-spell-checker` | Spell checking for code and comments              |
+| `dbaeumer.vscode-eslint`                | ESLint integration for linting                    |
+| `esbenp.prettier-vscode`                | Prettier integration for code formatting          |
+| `eamodio.gitlens`                       | Enhanced Git capabilities and history             |
+| `usernamehw.errorlens`                  | Inline display of errors and warnings             |
+| `YoavBls.pretty-ts-errors`              | Improved TypeScript error messages                |
+| `codeandstuff.package-json-upgrade`     | Shows available package updates in `package.json` |
