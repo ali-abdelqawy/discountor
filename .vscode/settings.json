@@ -1,11 +1,19 @@
 {
+  // Auto-format files on save
   "editor.formatOnSave": true,
+  // Use Prettier as the default formatter
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 2-space indentation
   "editor.tabSize": 2,
+  // Use spaces instead of tabs
   "editor.insertSpaces": true,
+  // Disable auto-detection, use configured style
   "editor.detectIndentation": false,
+  // Colorize matching brackets
   "editor.bracketPairColorization.enabled": true,
+  // Show bracket pair guides
   "editor.guides.bracketPairs": true,
+  // Auto-fix linting issues and organize imports on save
   "editor.codeActionsOnSave": {
     "source.organizeImports.prettier": "explicit",
     "source.fixAll.prettier": "explicit",
@@ -13,6 +21,7 @@
     "quickfix.prettier": "explicit"
   },
 
+  // Per-language formatter overrides (Prettier for all)
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -21,26 +30,39 @@
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
+  // Use workspace TypeScript version
   "typescript.tsdk": "node_modules/typescript/lib",
+  // Prompt to use workspace TypeScript
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  // Auto-update imports when files are moved
   "typescript.updateImportsOnFileMove.enabled": "always",
+  // Prefer non-relative import paths
   "typescript.preferences.importModuleSpecifier": "non-relative",
+  // No patterns excluded from auto-import
   "typescript.preferences.autoImportFileExcludePatterns": [],
 
+  // Enable ESLint for JS and TS files
   "eslint.validate": ["javascript", "typescript"],
+  // Use ESLint flat config format
   "eslint.useFlatConfig": true,
 
+  // Remove trailing whitespace on save
   "files.trimTrailingWhitespace": true,
+  // Ensure files end with a newline
   "files.insertFinalNewline": true,
+  // Remove extra newlines at end of file
   "files.trimFinalNewlines": true,
 
+  // Show whitespace changes in diffs
   "diffEditor.ignoreTrimWhitespace": false,
 
+  // Exclude build artifacts from search
   "search.exclude": {
     "**/node_modules": true,
     "**/dist": true,
     "**/coverage": true
   },
 
+  // Always open files in new tabs (disable preview mode)
   "workbench.editor.enablePreview": false
 }
