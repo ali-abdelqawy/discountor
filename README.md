@@ -194,3 +194,7 @@ This project includes a `.vscode/extensions.json` file with recommended extensio
 ## VS Code Settings
 
 The `.vscode/settings.json` file configures consistent editor behavior across all contributors, including formatting, linting, and TypeScript preferences.
+
+---
+
+> **Note:** Please keep this README up to date when making changes to the project configuration, tooling, or workflows.
