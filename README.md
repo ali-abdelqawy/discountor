@@ -10,6 +10,7 @@ a discount engine that applies various promotional discounts to a user's shoppin
 - [Run tests](#run-tests)
 - [Git](#git)
 - [Path Aliases](#path-aliases)
+- [Code Quality](#code-quality)
 - [VS Code Extensions](#vs-code-extensions)
 - [VS Code Settings](#vs-code-settings)
 
@@ -147,6 +148,34 @@ Path aliases are configured in:
 - **`tsconfig.json`**: `"paths": { "@/*": ["./src/*"] }`
 - **`package.json`** (Jest): `moduleNameMapper` for unit tests
 - **`test/jest-e2e.json`**: `moduleNameMapper` for e2e tests
+
+## Code Quality
+
+This project uses several tools to maintain code quality:
+
+### Prettier
+
+Code formatting is handled by Prettier with the `@trivago/prettier-plugin-sort-imports` plugin to automatically sort imports.
+
+```bash
+npm run format
+```
+
+### ESLint
+
+Linting is configured with ESLint using the flat config format (`eslint.config.mjs`). Relative imports are disallowed in favor of path aliases.
+
+```bash
+npm run lint
+```
+
+### Husky
+
+Git hooks are managed by Husky. The pre-commit hook runs:
+
+1. `npm run lint` — Lint check
+2. `npm run format` — Format code
+3. `npm test` — Run unit tests
 
 ## VS Code Extensions
 
