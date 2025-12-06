@@ -19,6 +19,21 @@ Engine validation is enforced at three levels:
 
 The `packageManager` field is set to `npm@11.2.0` to ensure consistent package management across environments.
 
+### Using nvm (recommended)
+
+For easier Node.js and npm version switching in non-containerized environments, use [nvm](https://github.com/nvm-sh/nvm):
+
+```bash
+# Install nvm (if not already installed)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+# Install and use the required Node.js and npm versions
+nvm install
+nvm use
+```
+
+The project includes an `.nvmrc` file, so nvm will automatically use the correct Node.js and npm versions.
+
 ## Project setup
 
 ```bash
