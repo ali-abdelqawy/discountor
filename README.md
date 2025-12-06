@@ -50,3 +50,47 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Git
+
+This project uses three main branches:
+
+| Branch    | Purpose             | Default |
+| --------- | ------------------- | ------- |
+| `develop` | Development         | ✅      |
+| `staging` | Pre-production      | ❌      |
+| `prod`    | Production releases | ❌      |
+
+### Branch Protection Rules
+
+All three branches have the following protections enabled:
+
+- **Protected from deletion**
+- **Linear history required**
+- **Deployments must succeed**
+- **Pull request required before merging**
+- **Status checks must pass**
+- **Force pushes blocked**
+- **Branches must be up to date before merging**
+- **Squash merge only**
+
+### Rules
+
+- PRs should target the `develop` branch only (the default branch).
+
+### General Guidelines
+
+- Commits and branches must be **atomic** — each should contain only one logical change.
+- Commit messages should be **meaningful** and clearly describe the change.
+
+### Tips for Faster PR Workflow
+
+Install the [GitHub CLI](https://cli.github.com/) for faster PR management:
+
+```bash
+# Create a pull request
+gh pr create
+
+# Squash merge a pull request
+gh pr merge --squash
+```
