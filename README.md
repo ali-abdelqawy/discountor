@@ -173,9 +173,10 @@ npm run lint
 
 Git hooks are managed by Husky. The pre-commit hook runs:
 
-1. `npm run lint` — Lint check
-2. `npm run format` — Format code
-3. `npm test` — Run unit tests
+1. `npm run typecheck` — Type check
+2. `npm run lint` — Lint check
+3. `npm run format` — Format code
+4. `npm test` — Run unit tests
 
 ## VS Code Extensions
 
