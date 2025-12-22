@@ -31,6 +31,12 @@ Engine validation is enforced at three levels:
 
 The `packageManager` field is set to `npm@11.2.0` to ensure consistent package management across environments.
 
+To check for outdated dependencies:
+
+```bash
+npm run check:outdated
+```
+
 ### Using nvm (recommended)
 
 For easier Node.js and npm version switching in non-containerized environments, use [nvm](https://github.com/nvm-sh/nvm):
@@ -175,7 +181,7 @@ npm run lint
 
 Git hooks are managed by Husky. The pre-commit hook runs:
 
-1. `npm run typecheck` — Type check
+1. `npm run check:types` — Type check
 2. `npx lint-staged` — Lint and format staged files
 3. `npm test` — Run unit tests
 
