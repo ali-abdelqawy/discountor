@@ -176,9 +176,23 @@ npm run lint
 Git hooks are managed by Husky. The pre-commit hook runs:
 
 1. `npm run typecheck` — Type check
-2. `npm run lint` — Lint check
-3. `npm run format` — Format code
-4. `npm test` — Run unit tests
+2. `npx lint-staged` — Lint and format staged files
+3. `npm test` — Run unit tests
+
+### lint-staged
+
+lint-staged runs linting and formatting only on staged files, making commits faster. It's configured in `package.json`:
+
+```json
+"lint-staged": {
+  "**/*.{ts,js,mjs,json}": [
+    "prettier --write",
+    "eslint --fix"
+  ]
+}
+```
+
+This ensures that only the files you're committing are checked, rather than the entire codebase.
 
 ## VS Code Extensions
 
