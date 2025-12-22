@@ -9,10 +9,6 @@
   "editor.insertSpaces": true,
   // Disable auto-detection, use configured style
   "editor.detectIndentation": false,
-  // Colorize matching brackets
-  "editor.bracketPairColorization.enabled": true,
-  // Show bracket pair guides
-  "editor.guides.bracketPairs": true,
   // Auto-fix linting issues and organize imports on save
   "editor.codeActionsOnSave": {
     "source.organizeImports.prettier": "explicit",
