@@ -200,6 +200,14 @@ lint-staged runs linting and formatting only on staged files, making commits fas
 
 This ensures that only the files you're committing are checked, rather than the entire codebase.
 
+### Knip
+
+Knip finds unused files, dependencies, and exports in your project.
+
+```bash
+npm run unused
+```
+
 ## VS Code Extensions
 
 This project includes a `.vscode/extensions.json` file with recommended extensions for an optimal development experience. When you open the project in VS Code, you'll be prompted to install them.
