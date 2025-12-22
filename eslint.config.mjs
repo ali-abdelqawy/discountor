@@ -32,6 +32,7 @@ export default defineConfig(
           ],
         },
       ],
+      "no-process-env": "error",
     },
   },
 );
