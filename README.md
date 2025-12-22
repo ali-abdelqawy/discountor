@@ -165,6 +165,8 @@ npm run format
 
 Linting is configured with ESLint using the flat config format (`eslint.config.mjs`). Relative imports are disallowed in favor of path aliases.
 
+The `no-process-env` rule is enabled to prevent direct access to `process.env`. This encourages centralized configuration management and makes environment variable usage more explicit and testable.
+
 ```bash
 npm run lint
 ```
