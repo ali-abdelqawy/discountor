@@ -1,59 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "useDefineForClassFields": true,
-    "moduleDetection": "force",
-
-    /* Modules */
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": false,
-    "noResolve": false,
-    "noUncheckedSideEffectImports": true,
-
-    /* JavaScript Support */
-    "allowJs": false,
-
-    /* Emit */
-    "sourceMap": true,
+    "module": "commonjs",
+    "declaration": true,
     "removeComments": true,
-    "newLine": "lf",
-    "noEmitOnError": true,
-
-    /* Interop Constraints */
-    "isolatedModules": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "ES2023",
 
-    /* Type Checking */
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "useUnknownInCatchVariables": false,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": false,
-    "allowUnusedLabels": false,
-    "allowUnreachableCode": false,
-
-    /* Completeness */
-    "skipDefaultLibCheck": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
     "skipLibCheck": true,
-    "outDir": "dist",
-    "baseUrl": ".",
+    "strictNullChecks": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false,
+
     "paths": { "@/*": ["./src/*"] }
   }
 }
