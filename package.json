@@ -16,6 +16,7 @@
     "check:engines": "npm run check:node && npm run check:npm",
     "check:outdated": "ncu --deep",
     "check:types": "tsc --noEmit",
+    "check:startup": "nest build && node -e \"const p=require('child_process').spawn('node',['dist/main'],{stdio:'inherit'});setTimeout(()=>{p.kill();process.exit(0)},3000);p.on('error',()=>process.exit(1));p.on('exit',c=>c&&process.exit(c))\"",
     "build": "nest build",
     "format": "prettier --write \"**/*.{ts,js,mjs,json}\"",
     "start": "nest start",
