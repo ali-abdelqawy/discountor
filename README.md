@@ -91,8 +91,8 @@ This project uses three main branches:
 | Branch    | Purpose             | Default |
 | --------- | ------------------- | ------- |
 | `develop` | Development         | ✅      |
-| `staging` | Pre-production      | ❌      |
-| `prod`    | Production releases | ❌      |
+| `staging` | Pre-production      | –       |
+| `prod`    | Production releases | –       |
 
 ### Branch Protection Rules
 
@@ -179,11 +179,17 @@ npm run lint
 
 ### Husky
 
-Git hooks are managed by Husky. The pre-commit hook runs:
+Git hooks are managed by Husky.
+
+**Pre-commit hook:**
 
 1. `npm run check:types` — Type check
 2. `npx lint-staged` — Lint and format staged files
 3. `npm test` — Run unit tests
+
+**Pre-push hook:**
+
+1. `npm run check:startup` — Build and verify the app starts without errors
 
 ### lint-staged
 
